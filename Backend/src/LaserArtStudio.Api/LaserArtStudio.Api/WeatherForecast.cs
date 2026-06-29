@@ -1,4 +1,4 @@
-namespace LaserArt_Studio
+namespace LaserArtStudio.Api
 {
     public class WeatherForecast
     {

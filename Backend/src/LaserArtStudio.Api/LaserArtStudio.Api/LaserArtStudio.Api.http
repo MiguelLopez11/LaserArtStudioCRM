@@ -1,0 +1,6 @@
+@LaserArtStudio.Api_HostAddress = http://localhost:5116
+
+GET {{LaserArtStudio.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
