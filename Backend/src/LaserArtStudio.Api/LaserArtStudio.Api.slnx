@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="LaserArtStudio.Api/LaserArtStudio.Api.csproj" />
+  <Project Path="LaserArtStudio.Application/LaserArtStudio.Application.csproj" />
+  <Project Path="LaserArtStudio.Domain/LaserArtStudio.Domain.csproj" />
+  <Project Path="LaserArtStudio.Infrastructure/LaserArtStudio.Infrastructure.csproj" />
+</Solution>
