@@ -9,7 +9,7 @@ namespace LaserArtStudio.Domain.Entities
 {
     public class Customer
     {
-        public int Id { get; private set; }
+        public int CustomerId { get; private set; }
 
         public string FirstName { get; private set; } = string.Empty;
 

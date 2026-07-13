@@ -28,6 +28,6 @@ public sealed class CreateCustomerCommandHandler
 
         await _context.SaveChangesAsync(cancellationToken);
 
-        return customer.Id;
+        return customer.CustomerId;
     }
 }

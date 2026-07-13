@@ -9,7 +9,7 @@ namespace LaserArtStudio.Application.Features.Customers.DTOs
 
     public sealed record CustomerDto
     (
-        int Id,
+        int CustomerId,
         string FirstName,
         string LastName,
         string Email,

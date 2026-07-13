@@ -27,7 +27,7 @@ namespace LaserArtStudio.Application.Features.Customers.Queries.GetCustomers
             return await _context.Customers
                 .AsNoTracking()
                 .Select(customer => new CustomerDto(
-                    customer.Id,
+                    customer.CustomerId,
                     customer.FirstName,
                     customer.LastName,
                     customer.Email,
