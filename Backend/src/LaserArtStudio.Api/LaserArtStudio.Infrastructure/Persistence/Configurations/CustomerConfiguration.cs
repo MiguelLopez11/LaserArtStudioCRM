@@ -15,7 +15,7 @@ namespace LaserArtStudio.Infrastructure.Persistence.Configurations
         {
             builder.ToTable("Customers");
 
-            builder.HasKey(x => x.Id);
+            builder.HasKey(x => x.CustomerId);
 
             builder.Property(x => x.FirstName)
                    .HasMaxLength(100)
