@@ -1,4 +1,5 @@
 using LaserArtStudio.Api.Endpoints;
+using LaserArtStudio.Api.Middlewares;
 using LaserArtStudio.Application;
 using LaserArtStudio.Infrastructure.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
@@ -21,10 +22,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.MapCustomerEndpoints();
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
+
+app.UseMiddleware<GlobalExceptionMiddleware>();
+
+app.MapCustomerEndpoints();
 
 app.MapControllers();
 
